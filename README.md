@@ -1,39 +1,144 @@
-# Week 3 – Team 13 Repository
+# Code Hieroglyphics
 
-## Overview
+## Mission Control
 
-This repository is the `Team 13` workspace for the Week 3 Games. The team will progressively build GitHub Actions workflows, validate content quality, investigate pipeline failures, publish a release, repair broken workflows, and implement automated security scanning.
+Communicate with your partner **only through Git**.
+
+---
+
+## Team Roles
+
+Each team consists of **two students**.
+
+|  Student  |         Role        | File                      |
+| :-------: | :-----------------: | :------------------------ |
+| Student A |       ✈️ Pilot      | `pilot_log.txt`           |
+| Student B | 🛰️ Mission Control | `mission_control_log.txt` |
+
+Each student edits **only** their assigned file.
+
+---
+
+## Setup
+
+Open the **Codio Terminal**.
+
+Clone the repository.
+
+```bash
+git clone https://github.com/amzn-swdv-007-georges/mission.git
+```
+
+Enter the repository.
+
+```bash
+cd mission
+```
+
+Navigate to your assigned team directory.
+
+Example:
+
+```bash
+cd mission/team_01
+```
+
+Verify your location.
+
+```bash
+pwd
+ls
+```
+
+Expected output:
+
+```text
+mission_control_log.txt
+pilot_log.txt
+```
+
+---
 
 ## Repository Structure
 
 ```text
-.
-├── .github
-│   └── workflows
-│       ├── spellcheck.yml          # Game 1: Automated Proofreader
-│       ├── markdownlint.yml        # Game 2: Layout Enforcer
-│       ├── printingpresslint.yml   # Game 3: Printing Press Jam
-│       ├── repair_job.yml          # Game 5: Press Schematics
-│       └── redactor.yml            # Game 6: The Redactor
-├── draft.md                        # Game 1
-├── editorial_draft.md              # Game 2
-├── chapters/                       # Game 3
-├── RELEASE.md                      # Game 4
-└── expense_reports.md              # Game 6
+mission/
+├── team_01
+│   ├── mission_control_log.txt
+│   └── pilot_log.txt
+├── team_02
+│   ├── mission_control_log.txt
+│   └── pilot_log.txt
+├── team_03
+│   ├── mission_control_log.txt
+│   └── pilot_log.txt
+├── team_04
+│   ├── mission_control_log.txt
+│   └── pilot_log.txt
+├── team_05
+│   ├── mission_control_log.txt
+│   └── pilot_log.txt
+├── team_06
+│   ├── mission_control_log.txt
+│   └── pilot_log.txt
+├── team_07
+│   ├── mission_control_log.txt
+│   └── pilot_log.txt
+├── team_08
+│   ├── mission_control_log.txt
+│   └── pilot_log.txt
+├── team_09
+│   ├── mission_control_log.txt
+│   └── pilot_log.txt
+└── team_10
+    ├── mission_control_log.txt
+    └── pilot_log.txt
 ```
 
-## Workflows
+Work **only** inside your assigned team directory.
 
-| Workflow                | Game   | Purpose                                                            |
-| ----------------------- | ------ | ------------------------------------------------------------------ |
-| `spellcheck.yml`        | Game 1 | Detect spelling mistakes before merge.                             |
-| `markdownlint.yml`      | Game 2 | Enforce Markdown formatting and layout standards.                  |
-| `printingpresslint.yml` | Game 3 | Validate shared anthology content during collaborative publishing. |
-| `repair_job.yml`        | Game 5 | Demonstrate workflow troubleshooting and YAML repair.              |
-| `redactor.yml`          | Game 6 | Detect exposed secrets and credentials before merge.               |
+---
 
-## Release
+## Git Workflow
 
-| Artifact                | Game   | Purpose                                                |
-| ----------------------- | ------ | ------------------------------------------------------ |
-| GitHub Release `v1.0.0` | Game 4 | Publish the first validated edition of the repository. |
+Before editing your file, synchronize your local repository.
+
+```bash
+git pull
+```
+
+Downloads the latest changes from GitHub made by your partner.
+
+After editing your file:
+
+```bash
+git status
+git add .
+git commit -m "message"
+git push
+```
+
+---
+
+## GitHub Authentication
+
+The first time you run `git push`, Codio may request GitHub credentials.
+
+Use **your own GitHub account**.
+
+```text
+Username: Your GitHub username
+Password: Your GitHub Personal Access Token (PAT)
+```
+
+If you have already authenticated with GitHub in Codio, `git push` may complete without prompting for credentials.
+
+---
+
+## Communication Rules
+
+* Work only inside your assigned team directory.
+* Edit only your assigned file.
+* No verbal communication.
+* No chat or direct messages.
+* Communicate only through Git.
