@@ -26,13 +26,13 @@ Open the **Codio Terminal**.
 Clone the repository.
 
 ```bash
-git clone https://github.com/amzn-swdv-007-georges/mission.git
+git clone https://github.com/amzn-swdv-007-georges/outback-comms-sat.git
 ```
 
 Enter the repository.
 
 ```bash
-cd mission
+cd outback-comms-sat
 ```
 
 Navigate to your assigned team directory.
@@ -62,37 +62,38 @@ pilot_log.txt
 ## Repository Structure
 
 ```text
-mission/
-├── team_01
-│   ├── mission_control_log.txt
-│   └── pilot_log.txt
-├── team_02
-│   ├── mission_control_log.txt
-│   └── pilot_log.txt
-├── team_03
-│   ├── mission_control_log.txt
-│   └── pilot_log.txt
-├── team_04
-│   ├── mission_control_log.txt
-│   └── pilot_log.txt
-├── team_05
-│   ├── mission_control_log.txt
-│   └── pilot_log.txt
-├── team_06
-│   ├── mission_control_log.txt
-│   └── pilot_log.txt
-├── team_07
-│   ├── mission_control_log.txt
-│   └── pilot_log.txt
-├── team_08
-│   ├── mission_control_log.txt
-│   └── pilot_log.txt
-├── team_09
-│   ├── mission_control_log.txt
-│   └── pilot_log.txt
-└── team_10
-    ├── mission_control_log.txt
-    └── pilot_log.txt
+outback-comms-sat/
+└── mission/
+    ├── team_01/
+    │   ├── mission_control_log.txt
+    │   └── pilot_log.txt
+    ├── team_02/
+    │   ├── mission_control_log.txt
+    │   └── pilot_log.txt
+    ├── team_03/
+    │   ├── mission_control_log.txt
+    │   └── pilot_log.txt
+    ├── team_04/
+    │   ├── mission_control_log.txt
+    │   └── pilot_log.txt
+    ├── team_05/
+    │   ├── mission_control_log.txt
+    │   └── pilot_log.txt
+    ├── team_06/
+    │   ├── mission_control_log.txt
+    │   └── pilot_log.txt
+    ├── team_07/
+    │   ├── mission_control_log.txt
+    │   └── pilot_log.txt
+    ├── team_08/
+    │   ├── mission_control_log.txt
+    │   └── pilot_log.txt
+    ├── team_09/
+    │   ├── mission_control_log.txt
+    │   └── pilot_log.txt
+    └── team_10/
+        ├── mission_control_log.txt
+        └── pilot_log.txt
 ```
 
 Work **only** inside your assigned team directory.
@@ -124,14 +125,12 @@ git push
 
 The first time you run `git push`, Codio may request GitHub credentials.
 
-Use **your own GitHub account**.
+Use your GitHub credentials.
 
 ```text
 Username: Your GitHub username
 Password: Your GitHub Personal Access Token (PAT)
 ```
-
-If you have already authenticated with GitHub in Codio, `git push` may complete without prompting for credentials.
 
 ---
 
@@ -139,6 +138,7 @@ If you have already authenticated with GitHub in Codio, `git push` may complete 
 
 * Work only inside your assigned team directory.
 * Edit only your assigned file.
+* Run `git pull` before making changes.
 * No verbal communication.
 * No chat or direct messages.
 * Communicate only through Git.
